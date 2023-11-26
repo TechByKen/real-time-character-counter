@@ -5,7 +5,23 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Real Time Character Counter</title>
     <link rel="stylesheet" href="style.css" />
-    <script src="script.js"></script>
+    <script src="script.js" defer></script>
   </head>
-  <body></body>
+  <body>
+    <div class="container">
+      <h2>Real-time Character Counter</h2>
+      <textarea
+        id="textarea"
+        class="textarea"
+        placeholder="Please write your text here..."
+        maxlength="70"
+      ></textarea>
+      <div class="counter-container">
+        <p>
+          Total Characters:
+          <span class="total-counter" id="total-counter">70</span>
+        </p>
+      </div>
+    </div>
+  </body>
 </html>
